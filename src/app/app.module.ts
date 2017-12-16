@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-
+import { MapsComponent } from './components/maps/maps.component';
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, MapsComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
