@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'vtm';
+  title: string = 'Veterum';
+  lat: number = 51.178882019736214;
+  lng: number = -1.8262149999999338;
+
 }
