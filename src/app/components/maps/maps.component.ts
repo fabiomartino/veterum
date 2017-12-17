@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'vtm-maps',
@@ -6,19 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maps.component.scss']
 })
 export class MapsComponent implements OnInit {
-
   public mapTypeId = 'hybrid';
 
   public map: any = {
     title: 'Stonehenge',
-    zoom: 18,
+    zoom: 12,
     lat: 51.178882019736214,
     lng: -1.8262149999999338
   };
 
-  constructor() { }
+  public radioGroupForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit() {
+    this.radioGroupForm = this.formBuilder.group({
+      'mapTypeId': 'hybrid'
+    });
   }
 
 }

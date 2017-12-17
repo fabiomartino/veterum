@@ -1,4 +1,22 @@
-<agm-map [latitude]="map.lat" [longitude]="map.lng" [zoom]="map.zoom"
-[disableDefaultUI]="false" [zoomControl]="false" [mapTypeId]="mapTypeId">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+<!-- vtm-maps start -->
+<form [formGroup]="radioGroupForm">
+  <div class="btn-group" ngbRadioGroup name="radioBasic" formControlName="mapTypeId">
+    <label ngbButtonLabel class="btn btn-info btn-sm">
+      <input ngbButton type="radio" value="roadmap"> roadmap
+    </label>
+    <label ngbButtonLabel class="btn btn-info btn-sm">
+      <input ngbButton type="radio" value="hybrid"> hybrid
+    </label>
+    <label ngbButtonLabel class="btn btn-info btn-sm">
+      <input ngbButton type="radio" value="satellite"> satellite
+    </label>
+    <label ngbButtonLabel class="btn btn-info btn-sm">
+      <input ngbButton type="radio" value="terrain"> terrain
+    </label>
+  </div>
+  <hr>
+  <agm-map [latitude]="map.lat" [longitude]="map.lng" [zoom]="map.zoom" [disableDefaultUI]="false" [zoomControl]="false" [mapTypeId]="radioGroupForm.value['mapTypeId']">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</form>
+<!-- vtm-maps end -->
