@@ -9,6 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // Components
 import { AppComponent } from './app.component';
 import { MapsComponent } from './components/maps/maps.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -22,7 +24,7 @@ import { MapsComponent } from './components/maps/maps.component';
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, MapsComponent ],
+  declarations: [ AppComponent, MapsComponent, NavbarComponent, FooterComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
