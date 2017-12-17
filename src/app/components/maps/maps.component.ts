@@ -7,7 +7,6 @@ import {FormBuilder, FormGroup} from '@angular/forms';
   styleUrls: ['./maps.component.scss']
 })
 export class MapsComponent implements OnInit {
-  public mapTypeId = 'hybrid';
 
   public map: any = {
     title: 'Stonehenge',

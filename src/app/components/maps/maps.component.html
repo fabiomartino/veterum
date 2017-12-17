@@ -14,11 +14,14 @@
       <input ngbButton type="radio" value="terrain"> terrain
     </label>
   </div>
-  <agm-map [latitude]="map.lat" [longitude]="map.lng" [zoom]="map.zoom" [disableDefaultUI]="false" [zoomControl]="false" [mapTypeId]="radioGroupForm.value['mapTypeId']">
+  <agm-map [latitude]="map.lat" [longitude]="map.lng" [zoom]="map.zoom" [disableDefaultUI]="false" [zoomControl]="false" [streetViewControl]="false"
+    [mapTypeId]="radioGroupForm.value['mapTypeId']">
     <agm-marker [latitude]="map.lat" [longitude]="map.lng">
-        <agm-info-window [disableAutoPan]="true">
-            This is the location of <strong>{{map.title}}</strong>
-            </agm-info-window>
+      <agm-snazzy-info-window [isOpen]="true" [maxWidth]="200" [closeWhenOthersOpen]="true">
+        <ng-template>
+          This is the location of <strong>{{map.title}}</strong>
+        </ng-template>
+      </agm-snazzy-info-window>
     </agm-marker>
   </agm-map>
 </form>

@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "vtm",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/snazzy-info-window/dist/snazzy-info-window.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
