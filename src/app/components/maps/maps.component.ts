@@ -11,7 +11,7 @@ export class MapsComponent implements OnInit {
 
   public map: any = {
     title: 'Stonehenge',
-    zoom: 12,
+    zoom: 14,
     lat: 51.178882019736214,
     lng: -1.8262149999999338
   };

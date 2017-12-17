@@ -14,9 +14,12 @@
       <input ngbButton type="radio" value="terrain"> terrain
     </label>
   </div>
-  <hr>
   <agm-map [latitude]="map.lat" [longitude]="map.lng" [zoom]="map.zoom" [disableDefaultUI]="false" [zoomControl]="false" [mapTypeId]="radioGroupForm.value['mapTypeId']">
-    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    <agm-marker [latitude]="map.lat" [longitude]="map.lng">
+        <agm-info-window [disableAutoPan]="true">
+            This is the location of <strong>{{map.title}}</strong>
+            </agm-info-window>
+    </agm-marker>
   </agm-map>
 </form>
 <!-- vtm-maps end -->
