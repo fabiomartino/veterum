@@ -11,9 +11,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
+
 import { MapsComponent } from './components/maps/maps.component';
-import { NavbarComponent } from './layout/navbar/navbar.component';
-import { FooterComponent } from './layout/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { ErrorsComponent } from './components/errors/errors.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   imports: [
@@ -22,14 +26,13 @@ import { FooterComponent } from './layout/footer/footer.component';
     ReactiveFormsModule,
     NgbModule.forRoot(),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAMLJdPhD6MLnEunf2TxRtc_WpjecKjZcU'
-      // YOUR_GOOGLE_MAPS_API_KEY
+      apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     }),
     AgmSnazzyInfoWindowModule,
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, MapsComponent, NavbarComponent, FooterComponent ],
+  declarations: [ AppComponent, MapsComponent, HomeComponent, ErrorsComponent, NavbarComponent, FooterComponent, AboutComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -1,9 +1,7 @@
-<div class="container">
-  <navbar></navbar>
-  <div style="text-align:center">
-    <h1>Welcome to {{ title }}!</h1>
+<section class="ae-container-fluid">
+  <vtm-navbar></vtm-navbar>
+  <div>
+    <router-outlet></router-outlet>
   </div>
-  <vtm-maps></vtm-maps>
-  <router-outlet></router-outlet>
-  <!-- <footer></footer> -->
-</div>
+  <vtm-footer></vtm-footer>
+</section>
