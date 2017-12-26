@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // Components
+import { AboutComponent } from './components/about/about.component';
+import { ErrorsComponent } from './components/errors/errors.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { MapsComponent } from './components/maps/maps.component';
-import { ErrorsComponent } from './components/errors/errors.component';
-import { AboutComponent  } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },

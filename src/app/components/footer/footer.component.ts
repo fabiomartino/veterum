@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  public today: number;
+  constructor() {
+    this.today = Date.now();
   }
+
+  ngOnInit() { }
 
 }
