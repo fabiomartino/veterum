@@ -4,7 +4,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 @Component({
   selector: 'vtm-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
   animations: [
     trigger('collapse', [
       state('open', style({
@@ -29,8 +28,8 @@ export class NavbarComponent implements OnInit {
   constructor() {
     this.navbarCollapsed = true;
     this._navbarCollapsedAnim = 'closed';
+}
 
-  }
   ngOnInit() {
     this.onResize(window);
   }
@@ -45,6 +44,7 @@ export class NavbarComponent implements OnInit {
     }
     this.navbarCollapsed = true;
   }
+
   toggleNavbar(): void {
     if (this.navbarCollapsed) {
       this._navbarCollapsedAnim = 'open';

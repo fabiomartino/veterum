@@ -1,6 +1,6 @@
 <form [formGroup]="radioGroupForm">
-  <div class="btn-group" ngbRadioGroup name="radioBasic" formControlName="mapTypeId">
-    <label ngbButtonLabel class="btn btn-info btn-sm">
+<div class="btn-group" ngbRadioGroup name="radioBasic" formControlName="mapTypeId">
+  <!--     <label ngbButtonLabel class="btn btn-info btn-sm">
       <input ngbButton type="radio" value="roadmap"> roadmap
     </label>
     <label ngbButtonLabel class="btn btn-info btn-sm">
@@ -11,14 +11,14 @@
     </label>
     <label ngbButtonLabel class="btn btn-info btn-sm">
       <input ngbButton type="radio" value="terrain"> terrain
-    </label>
-  </div>
+    </label> -->
+  </div> 
   <agm-map [latitude]="map.lat" [longitude]="map.lng" [zoom]="map.zoom" [disableDefaultUI]="false" [zoomControl]="false" [streetViewControl]="false"
     [mapTypeId]="radioGroupForm.value['mapTypeId']">
     <agm-marker [latitude]="map.lat" [longitude]="map.lng">
       <agm-snazzy-info-window [isOpen]="true" [maxWidth]="200" [closeWhenOthersOpen]="true">
         <ng-template>
-          This is the location of <strong>{{map.title}}</strong>
+          {{ 'MAPS.LOCATION' | translate }} <strong>{{map.title}}</strong>
         </ng-template>
       </agm-snazzy-info-window>
     </agm-marker>

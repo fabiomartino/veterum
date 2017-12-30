@@ -1,0 +1,30 @@
+{
+  "NAVBAR": {
+    "HOME": "Inicio",
+    "INFORMATION": "Información",
+    "MAPS": "Mapas",
+    "ABOUT": "Acerca de"
+  },
+  "HOMEPAGE": {
+    "WELCOME": "¡Bienvenido a",
+    "STARTPAGE": "Página de Inicio"
+  },
+  "INFORMATION": {
+    "CONTENT": "Página de Información."
+  },
+  "MAPS": {
+    "CONTENT": "Página de Mapas.",
+    "LOCATION": "En este lugar se encuentra"
+  },
+  "ABOUT": {
+    "CONTENT": "Página acerca de..."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Derechos de autor",
+    "LICENSED": "Código licenciado bajo MIT."
+  },
+  "ERRORS": {
+    "NOTFOUND": "Error 404",
+    "CONTENT": "You may be lost. Follow the breadcrumbs back"
+  }
+}
