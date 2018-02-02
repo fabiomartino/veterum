@@ -12,17 +12,13 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // Dependencies
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routedComponents } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
 
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { ErrorsComponent } from './components/errors/errors.component';
-import { AboutComponent } from './components/about/about.component';
-import { MapsComponent } from './components/maps/maps.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
@@ -46,14 +42,13 @@ export function createTranslateLoader(http: HttpClient) {
       }
   }),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAMLJdPhD6MLnEunf2TxRtc_WpjecKjZcU'
-      // 'YOUR_GOOGLE_MAPS_API_KEY'
+      apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     }),
     AgmSnazzyInfoWindowModule,
     AppRoutingModule
   ],
   providers: [],
-  declarations: [ AppComponent, MapsComponent, HomeComponent, ErrorsComponent, NavbarComponent, FooterComponent, AboutComponent ],
+  declarations: [ AppComponent, routedComponents, NavbarComponent, FooterComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

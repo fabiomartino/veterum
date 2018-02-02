@@ -1,0 +1,30 @@
+{
+  "NAVBAR": {
+    "HOME": "Accueil",
+    "INFORMATION": "Information",
+    "MAPS": "Cartes",
+    "ABOUT": "À propos de"
+  },
+  "HOMEPAGE": {
+    "WELCOME": "Bienvenue à",
+    "STARTPAGE": "Page Accueil"
+  },
+  "INFORMATION": {
+    "CONTENT": "Page d'information."
+  },
+  "MAPS": {
+    "CONTENT": "Page de cartes.",
+    "LOCATION": "C'est l'emplacement de"
+  },
+  "ABOUT": {
+    "CONTENT": "À propos de..."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Droits d'auteur",
+    "LICENSED": "Code sous licence MIT."
+  },
+  "ERRORS": {
+    "NOTFOUND": "404 introuvable",
+    "CONTENT": "Vous pourriez être perdu. Suivez la chapelure en arrière."
+  }
+}
