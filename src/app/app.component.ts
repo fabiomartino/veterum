@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   moduleId: module.id.toString(),
-  selector: 'vtm-root',
+  selector: 'routing',
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
