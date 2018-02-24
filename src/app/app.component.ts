@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   moduleId: module.id.toString(),
+  // tslint:disable-next-line:component-selector
   selector: 'routing',
   templateUrl: './app.component.html'
 })

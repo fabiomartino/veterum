@@ -10,6 +10,6 @@
 			}
 	},
 	"files.autoSave": "afterDelay",
-	"editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontFamily": "'Courier New', Menlo, Monaco, monospace",
 	"eslint.enable": false
 }

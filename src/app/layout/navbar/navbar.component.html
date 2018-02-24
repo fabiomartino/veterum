@@ -1,28 +1,28 @@
 <nav class="navbar navbar-dark py-0 navbar-fixed-top bg-dark navbar-expand-lg py-md-0">
-    <a class="navbar-brand" [routerLink]="['/']">Veterum</a>
-    <button class="navbar-toggler" (click)="toggleNavbar()" type="button" aria-controls="navbarContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span *ngIf="navbarCollapsed" class="fa fa-bars fa-lg"></span>
-      <span *ngIf="!navbarCollapsed" class="fa fa-times fa-lg"></span>
-    </button>
-    <div [ngbCollapse]="navbarCollapsed" id="navbarContent" [@collapse]="collapseNavbar" class="navbar-collapse collapse navbar-toggleable">
-      <ul class="navbar-nav mr-auto ml-auto">
-        <li class="nav-item py-0" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
-          <a class="nav-link" [routerLink]="['/home']">
-            <i class="fa fa-home"></i>&nbsp;{{ 'NAVBAR.HOME' | translate }}&nbsp;</a>
-        </li>
-        <li class="nav-item py-0" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/information']">
-           <i class="fa fa-book"></i>&nbsp;{{ 'NAVBAR.INFORMATION' | translate }}&nbsp;</a>
-        </li>
-        <li class="nav-item py-0" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/maps']">
-            <i class="fa fa-globe"></i>&nbsp;{{ 'NAVBAR.MAPS' | translate }}&nbsp;</a>
-        </li>
-        <li class="nav-item py-0" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/about']">
-            <i class="fa fa-info-circle"></i>&nbsp;{{ 'NAVBAR.ABOUT' | translate }}&nbsp;</a>
-        </li>
-      </ul>
-    </div>
+  <a class="navbar-brand" [routerLink]="['/']">Veterum</a>
+  <button class="navbar-toggler" (click)="toggleNavbar()" type="button" aria-controls="navbarContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span *ngIf="navbarCollapsed" class="fa fa-bars fa-lg"></span>
+    <span *ngIf="!navbarCollapsed" class="fa fa-times fa-lg"></span>
+  </button>
+  <div [ngbCollapse]="navbarCollapsed" id="navbarContent" [@collapse]="collapseNavbar" class="navbar-collapse collapse navbar-toggleable">
+    <ul class="navbar-nav mr-auto ml-auto">
+      <li class="nav-item py-0" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" [routerLink]="['/home']">
+          <i class="fa fa-home"></i>&nbsp;{{ 'NAVBAR.HOME' | translate }}&nbsp;</a>
+      </li>
+      <li class="nav-item py-0" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/information']">
+          <i class="fa fa-book"></i>&nbsp;{{ 'NAVBAR.INFORMATION' | translate }}&nbsp;</a>
+      </li>
+      <li class="nav-item py-0" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/maps']">
+          <i class="fa fa-globe"></i>&nbsp;{{ 'NAVBAR.MAPS' | translate }}&nbsp;</a>
+      </li>
+      <li class="nav-item py-0" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/about']">
+          <i class="fa fa-info-circle"></i>&nbsp;{{ 'NAVBAR.ABOUT' | translate }}&nbsp;</a>
+      </li>
+    </ul>
+  </div>
 </nav>

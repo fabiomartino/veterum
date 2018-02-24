@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { fadeInAnimation } from '../../../animations/index';
 
 @Component({
   moduleId: module.id.toString(),
   templateUrl: './maps.component.html',
-  styleUrls: ['./maps.component.scss']
+  styleUrls: ['./maps.component.scss'],
+  animations: [fadeInAnimation],
+  host: { '[@fadeInAnimation]': '' }
 })
 export class MapsComponent implements OnInit {
 

@@ -1,5 +1,19 @@
-<vtm-navbar></vtm-navbar>
-<div class="container">
-  <router-outlet></router-outlet>
+<div class="container-fluid">
+  <header class="row">
+    <div class="col-12">
+      <vtm-navbar></vtm-navbar>
+    </div>
+  </header>
+  <section class="row">
+    <div class="col-12">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+  <footer class="bd-footer bg-dark text-muted fixed-bottom">
+    <div class="row">
+      <div class="col-12">
+        <vtm-footer></vtm-footer>
+      </div>
+    </div>
+  </footer>
 </div>
-<vtm-footer></vtm-footer>
