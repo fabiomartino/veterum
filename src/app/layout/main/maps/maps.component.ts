@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { fadeInAnimation } from '../../../animations/index';
 
 @Component({
   moduleId: module.id.toString(),
+  encapsulation: ViewEncapsulation.None,
   templateUrl: './maps.component.html',
   styleUrls: ['./maps.component.scss'],
   animations: [fadeInAnimation],

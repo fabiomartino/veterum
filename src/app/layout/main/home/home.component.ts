@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { fadeInAnimation } from '../../../animations/index';
 
 @Component({
   moduleId: module.id.toString(),
+  encapsulation: ViewEncapsulation.None,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [fadeInAnimation],
